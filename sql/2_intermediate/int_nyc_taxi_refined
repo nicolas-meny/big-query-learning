@@ -1,0 +1,12 @@
+CREATE OR REPLACE TABLE `my-ba-journey.NYC_TAXI.int_nyc_taxi_refined` AS
+SELECT DISTINCT
+    *
+FROM
+    `my-ba-journey.NYC_TAXI.int_nyc_taxi`
+WHERE
+    -- Application de tes règles métier
+    trip_distance < 100
+    AND fare_amount < 250
+    AND total_amount < 400
+    AND tolls_amount < 50
+    AND mta_tax < 2

@@ -1,0 +1,3 @@
+les valeures manquantes ont été supprimé lors de la premiere phase de cleanng
+coalesce a remplacé les na par -1
+et on a supprimé les valeures nulles
